@@ -1,0 +1,89 @@
+#:kivy 2.0.0
+
+<Button>
+    background_normal: ''
+    background_color: (92/255.0, 95/255.0, 96/255.0)
+    color: (1,1,1,1)
+    size_hint: (.2,.2)
+    font_size: 60
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 1
+        Line:
+            width: 2
+            rectangle: self.x, self.y, self.width, self.height
+    
+<MyLayout>
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+        #spacing: 1
+        TextInput:
+            id: calc_input
+            text: "0"
+            halign: "right"
+            font_size: 155
+            size_hint: (1, .2)
+            background_normal: ''
+            background_color: (34/255.0,35/255.0,39/255.0,1)
+            canvas.before:
+                Color:
+                    rgba: 1, 1, 1, 1
+
+        GridLayout:
+            cols: 4
+            rows: 5
+            Button:
+                text: "AC"
+                background_color: (56/255.0, 58/255.0, 61/255.0)
+            Button:
+                text: "+/-"
+                background_color: (56/255.0, 58/255.0, 61/255.0)
+            Button:
+                text: "<>"
+                background_color: (56/255.0, 58/255.0, 61/255.0)
+            Button:
+                text: "%"
+                background_color: (254/255.0, 158/255.0, 43/255.0)
+            Button:
+                text: "7"
+            Button:
+                text: "8"
+            Button:
+                text: "9"
+            Button:
+                text: "X"
+                background_color: (254/255.0, 158/255.0, 43/255.0)
+            Button:
+                text: "4"
+            Button:
+                text: "5"
+            Button:
+                text: "6"
+            Button:
+                text: "-"
+                background_color: (254/255.0, 158/255.0, 43/255.0)
+            Button:
+                text: "1"
+            Button:
+                text: "2"
+            Button:
+                text: "3"
+            Button:
+                text: "+"
+                background_color: (254/255.0, 158/255.0, 43/255.0)
+        
+        GridLayout:
+            cols: 3
+            rows: 1
+            size_hint: (1, 0.2)
+            Button:
+                text: "0"
+                size_hint: (0.4, 0.2)
+            Button:
+                text: "."
+                size_hint: (0.2, 0.2)
+            Button:
+                text: "="
+                size_hint: (0.2, 0.2)
+                background_color: (254/255.0, 158/255.0, 43/255.0)

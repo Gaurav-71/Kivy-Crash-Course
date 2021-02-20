@@ -1,0 +1,4 @@
+([('index',
+   '/Users/gauravv/Desktop/Development/Python/Crash '
+   'Course/Kivy-Crash-Course/11-Calculator/dist/index',
+   'EXECUTABLE')],)
